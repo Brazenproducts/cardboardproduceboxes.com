@@ -1,292 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plastic Produce Boxes | Better Than Cardboard | PP Corrugated</title>
-  <meta name="description" content="Switch from cardboard produce boxes to reusable plastic PP corrugated boxes. Stronger, cleaner, and lower total cost. Ideal for fruit and vegetable distributors.">
-  <link rel="canonical" href="https://cardboardproduceboxes.com/">
-  <meta property="og:title" content="Plastic Produce Boxes | Better Than Cardboard | PP Corrugated">
-  <meta property="og:description" content="Switch from cardboard produce boxes to reusable plastic PP corrugated boxes. Stronger, cleaner, and lower total cost.">
-  <meta property="og:url" content="https://cardboardproduceboxes.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://brazenproducts.github.io/elipacko-assets/grape-box.jpg">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Plastic Produce Boxes (Cardboard Replacement)",
-    "description": "Reusable polypropylene corrugated produce boxes engineered to replace single-use cardboard in fresh fruit and vegetable supply chains. Superior moisture resistance, reusability, and food safety.",
-    "brand": { "@type": "Brand", "name": "Elipacko" },
-    "url": "https://elipacko.com",
-    "image": "https://brazenproducts.github.io/elipacko-assets/grape-box.jpg",
-    "category": "Agricultural Packaging",
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "url": "https://elipacko.com"
-    }
-  }
-  </script>
-  <style>
-    :root {
-      --cb-forest: #255c3a;
-      --cb-sage: #4a8c62;
-      --cb-cream: #fafaf6;
-      --cb-lt: #eef5f0;
-      --cb-rule: #c5dfc9;
-      --cb-ink: #1a2620;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background: var(--cb-cream); color: var(--cb-ink); line-height: 1.72; }
-    a { color: var(--cb-forest); }
-
-    /* Hero */
-    .cb-hero {
-      position: relative;
-      overflow: hidden;
-      background: var(--cb-forest);
-      color: #fff;
-      padding: 88px 24px 80px;
-      text-align: center;
-    }
-    .cb-hero::before {
-      content: '';
-      position: absolute;
-      top: -60px; right: -60px;
-      width: 340px; height: 340px;
-      background: rgba(255,255,255,0.05);
-      border-radius: 50%;
-    }
-    .cb-hero h1 { font-size: 2.6rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.3px; }
-    .cb-hero .tagline { font-size: 1.3rem; color: #b8e0c4; margin-bottom: 10px; font-weight: 300; }
-    .cb-hero .sub { font-size: 1rem; max-width: 580px; margin: 0 auto 36px; opacity: 0.88; }
-    .cb-btn {
-      display: inline-block;
-      background: #ffffff;
-      color: var(--cb-forest);
-      font-weight: 800;
-      text-decoration: none;
-      padding: 14px 40px;
-      border-radius: 3px;
-      font-size: 1rem;
-      letter-spacing: 0.3px;
-      transition: all 0.2s;
-    }
-    .cb-btn:hover { background: var(--cb-lt); }
-
-    /* Stats row */
-    .cb-stats {
-      background: var(--cb-lt);
-      border-top: 3px solid var(--cb-rule);
-      border-bottom: 3px solid var(--cb-rule);
-      display: flex;
-      justify-content: center;
-      gap: 0;
-    }
-    .cb-stat {
-      flex: 1;
-      max-width: 220px;
-      text-align: center;
-      padding: 32px 16px;
-      border-right: 1px solid var(--cb-rule);
-    }
-    .cb-stat:last-child { border-right: none; }
-    .cb-stat .num { font-size: 2.4rem; font-weight: 900; color: var(--cb-forest); display: block; }
-    .cb-stat .label { font-size: 0.85rem; color: #3a5040; letter-spacing: 0.5px; text-transform: uppercase; margin-top: 4px; }
-
-    /* Feature cards (3-col) */
-    .cb-cards {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 64px 24px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-    }
-    .cb-card {
-      background: #fff;
-      border-radius: 6px;
-      padding: 32px 26px;
-      border: 1px solid var(--cb-rule);
-      border-top: 4px solid var(--cb-forest);
-    }
-    .cb-card .icon { font-size: 2rem; margin-bottom: 14px; }
-    .cb-card h3 { font-size: 1.05rem; color: var(--cb-forest); margin-bottom: 10px; }
-    .cb-card p { font-size: 0.94rem; }
-
-    /* Photo strip */
-    .cb-strip {
-      display: flex;
-      height: 280px;
-      gap: 3px;
-      background: var(--cb-forest);
-    }
-    .cb-strip img { flex: 1; object-fit: cover; display: block; transition: filter 0.3s; }
-    .cb-strip img:hover { filter: brightness(1.08); }
-
-    /* Buyers guide */
-    .cb-guide {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 72px 24px;
-    }
-    .cb-guide h2 { font-size: 2rem; color: var(--cb-forest); margin-bottom: 24px; }
-    .cb-guide h3 { font-size: 1.2rem; color: var(--cb-sage); margin-top: 32px; margin-bottom: 10px; }
-    .cb-guide p { margin-bottom: 16px; font-size: 1rem; }
-    .cb-guide ul { padding-left: 22px; margin-bottom: 16px; }
-    .cb-guide ul li { margin-bottom: 8px; font-size: 1rem; }
-
-    /* CTA */
-    .cb-cta {
-      background: var(--cb-lt);
-      border-top: 3px solid var(--cb-rule);
-      text-align: center;
-      padding: 64px 24px;
-    }
-    .cb-cta h2 { font-size: 1.9rem; color: var(--cb-forest); margin-bottom: 14px; }
-    .cb-cta p { max-width: 540px; margin: 0 auto 28px; }
-    .cb-cta a.cta-final {
-      background: var(--cb-forest);
-      color: #fff;
-      text-decoration: none;
-      font-weight: 700;
-      padding: 14px 40px;
-      border-radius: 3px;
-      display: inline-block;
-      font-size: 1rem;
-    }
-
-    footer {
-      background: var(--cb-ink);
-      color: #7a9e84;
-      text-align: center;
-      padding: 22px;
-      font-size: 0.88rem;
-    }
-    footer a { color: #7a9e84; }
-
-    @media (max-width: 720px) {
-      .cb-hero h1 { font-size: 1.9rem; }
-      .cb-cards { grid-template-columns: 1fr; }
-      .cb-stats { flex-wrap: wrap; }
-      .cb-stat { max-width: 50%; }
-      .cb-strip { height: 150px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cardboard vs PP Produce Boxes Guide | Best Suppliers, Specs &amp; Pricing 2026</title>
+<meta name="description" content="Independent guide: plastic vs cardboard produce boxes. Our #1 recommended reusable PP manufacturer ships direct to the USA with 0% import duty — stronger, greener, better value long-term.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#fafaf5;color:#222}
+header{background:#4a3c1a;padding:18px 40px;display:flex;align-items:center;justify-content:space-between}
+header h1{font-size:1.1rem;color:#fff;font-weight:700}
+.cta-btn{display:inline-block;background:#d4830a;color:#fff;font-size:1rem;font-weight:700;padding:14px 36px;border-radius:4px;text-decoration:none}
+.cta-btn:hover{background:#b87008}
+.hero{background:linear-gradient(135deg,#4a3c1a,#6a5820);padding:80px 40px 0;text-align:center;color:#fff}
+.hero h2{font-size:2.6rem;font-weight:800;margin-bottom:18px;line-height:1.2}
+.hero p{font-size:1.1rem;color:#e8d89a;max-width:700px;margin:0 auto 35px;line-height:1.7}
+.photo-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:40px}
+.photo-strip img{width:100%;height:270px;object-fit:cover;display:block}
+.stats-bar{display:flex;justify-content:center;background:#2e2510;border-bottom:1px solid #4a3c1a;flex-wrap:wrap}
+.stat{flex:1;min-width:120px;padding:22px 12px;text-align:center;border-right:1px solid #4a3c1a}
+.stat:last-child{border-right:none}
+.stat .num{font-size:1.5rem;font-weight:800;color:#d4830a}
+.stat .label{font-size:0.68rem;color:#7a6a3a;margin-top:5px;text-transform:uppercase;letter-spacing:1px}
+.recycle-banner{background:#e8f5e8;border-top:2px solid #4a9a2a;border-bottom:2px solid #4a9a2a;padding:16px 40px;text-align:center}
+.recycle-banner p{color:#2d5a1b;font-size:0.95rem}
+.recycle-banner strong{color:#1a3a0e}
+.gallery{background:#f5f0e8;padding:70px 40px}
+.gallery h3{font-size:1.4rem;color:#4a3c1a;text-align:center;margin-bottom:6px;letter-spacing:1px;text-transform:uppercase}
+.gallery .sub{text-align:center;color:#7a6a3a;font-size:0.85rem;margin-bottom:34px}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;max-width:1000px;margin:0 auto}
+.gcard{background:#fff;border:1px solid #e0d0b0;overflow:hidden;border-radius:4px}
+.gcard img{width:100%;height:230px;object-fit:cover;display:block}
+.gcard .cap{padding:14px 16px;border-top:3px solid #d4830a}
+.gcard .cap h4{color:#4a3c1a;font-size:0.8rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.gcard .cap p{color:#7a6a3a;font-size:0.8rem}
+.honest{background:#fff;padding:60px 40px;max-width:850px;margin:0 auto}
+.honest h3{font-size:1.7rem;color:#4a3c1a;margin-bottom:20px}
+.honest p{color:#555;line-height:1.8;margin-bottom:15px}
+.comp{background:#f5f0e8;padding:60px 40px}
+.comp h3{font-size:1.6rem;color:#4a3c1a;text-align:center;margin-bottom:35px}
+.comp-table{max-width:820px;margin:0 auto;border-collapse:collapse;width:100%}
+.comp-table th{background:#4a3c1a;color:#fff;padding:14px 20px;text-align:left;font-size:0.9rem}
+.comp-table th:first-child{background:#ece8d8;color:#444}
+.comp-table td{padding:13px 20px;border-bottom:1px solid #e8e0c8;font-size:0.92rem}
+.comp-table tr:nth-child(even) td{background:#faf8f0}
+.yes{color:#1a7a3c;font-weight:700}.no{color:#c0392b}
+.benefits{padding:60px 40px;max-width:1000px;margin:0 auto}
+.benefits h3{font-size:1.6rem;color:#4a3c1a;text-align:center;margin-bottom:35px}
+.ben-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.ben{background:#fff;border:1px solid #e0d0b0;border-top:3px solid #d4830a;padding:24px;border-radius:4px}
+.ben h4{color:#4a3c1a;font-size:0.88rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.ben p{color:#555;font-size:0.9rem;line-height:1.6}
+.cta-section{background:#4a3c1a;padding:72px 40px;text-align:center}
+.cta-section h3{font-size:1.9rem;color:#fff;margin-bottom:12px}
+.cta-section p{color:#e8d89a;margin-bottom:30px;max-width:580px;margin-left:auto;margin-right:auto;line-height:1.7}
+.cta-btn-orange{display:inline-block;background:#d4830a;color:#fff;font-weight:700;padding:16px 40px;border-radius:4px;text-decoration:none;font-size:1rem}
+footer{background:#1e1808;padding:22px 40px;text-align:center;color:#5a4a28;font-size:0.82rem}
+footer a{color:#d4830a;text-decoration:none}
+@media(max-width:600px){.hero h2{font-size:1.8rem}.photo-strip{grid-template-columns:1fr}.photo-strip img{height:200px}}
+</style>
 </head>
 <body>
-
-<!-- Hero -->
-<header class="cb-hero">
-  <h1>Plastic Produce Boxes</h1>
-  <p class="tagline">The smart upgrade from cardboard produce boxes</p>
-  <p class="sub">Polypropylene corrugated produce boxes that survive your entire season, resist moisture, and cost far less per trip than single-use cardboard.</p>
-  <a href="https://elipacko.com" class="cb-btn">Find Plastic Produce Boxes at Elipacko →</a>
+<header>
+  <h1>CardboardProduceBoxes.com</h1>
+  <a href="https://elipacko.com" class="cta-btn" style="padding:10px 22px;font-size:0.85rem;">View Elipacko.com &rarr;</a>
 </header>
-
-<!-- Stats Row -->
-<div class="cb-stats">
-  <div class="cb-stat">
-    <span class="num">50×</span>
-    <span class="label">More trips than cardboard</span>
-  </div>
-  <div class="cb-stat">
-    <span class="num">40%</span>
-    <span class="label">Lighter tare weight</span>
-  </div>
-  <div class="cb-stat">
-    <span class="num">100%</span>
-    <span class="label">Moisture-proof surface</span>
-  </div>
-  <div class="cb-stat">
-    <span class="num">0</span>
-    <span class="label">Wax coating required</span>
-  </div>
-</div>
-
-<!-- Feature Cards -->
-<section class="cb-cards">
-  <div class="cb-card">
-    <div class="icon">🌧️</div>
-    <h3>Won't Collapse in the Cold Room</h3>
-    <p>Cardboard produce boxes — even wax-coated ones — lose structural integrity when exposed to condensation and cold-room humidity over time. PP corrugated boxes are 100% moisture-proof and maintain full stacking strength from -20°C to +80°C. No soggy bases. No collapsed pallets.</p>
-  </div>
-  <div class="cb-card">
-    <div class="icon">🔄</div>
-    <h3>Designed to Come Back</h3>
-    <p>A plastic produce box is built for a closed-loop logistics model. After delivery, it's collected, pressure-washed with food-safe sanitizer, inspected, and returned for the next load. With proper handling, each box completes 50 to 200 round trips, driving the per-trip packaging cost down to a fraction of cardboard.</p>
-  </div>
-  <div class="cb-card">
-    <div class="icon">♻️</div>
-    <h3>Recyclable at End of Life</h3>
-    <p>Polypropylene (PP, resin code #5) is a widely accepted recyclable material. When a plastic produce box finally reaches the end of its service life, it can be returned to the PP recycling stream. Waxed cardboard cannot be recycled due to wax contamination — it goes straight to landfill.</p>
-  </div>
-  <div class="cb-card">
-    <div class="icon">🧼</div>
-    <h3>Sanitizable to Food-Safe Standard</h3>
-    <p>PP corrugated has no grain, no fiber, and no surface porosity where bacteria can hide. A hot-water wash followed by an approved food-contact sanitizer (peracetic acid, QAC, or chlorine at appropriate concentrations) returns the box to compliance. Sanitation records can be maintained for audit trails.</p>
-  </div>
-  <div class="cb-card">
-    <div class="icon">📦</div>
-    <h3>Available in Standard Produce Sizes</h3>
-    <p>Plastic produce boxes are available in all major standard footprints: full Euro (600×400), half Euro (400×300), and North American 24×16 inch formats. Depth options from 100 mm (berries, grapes) to 300 mm (apples, citrus, root veg) ensure the right fit for every SKU in your product range.</p>
-  </div>
-  <div class="cb-card">
-    <div class="icon">🖨️</div>
-    <h3>Brandable with UV-Stable Print</h3>
-    <p>Grow your brand visibility at point of sale and throughout the supply chain. UV-stable ink printing on PP corrugated maintains vibrant color through repeated wash cycles. In-mold labeling (IML) offers even greater print durability for high-traffic pool systems where appearance matters.</p>
+<section class="hero">
+  <h2>Plastic Produce Boxes<br><em>Better Than Cardboard</em></h2>
+  <p>Comparing cardboard vs reusable PP produce boxes. We reviewed the top wholesale manufacturers — <strong style="color:#cc2200;">our #1 pick is Elipacko</strong>, shipping direct with 0% USA import duty.</p>
+  <a href="https://elipacko.com" class="cta-btn">View Recommended Manufacturer</a>
+    <div class="photo-strip">
+    <img src="https://brazenproducts.github.io/elipacko-assets/grape-box.jpg" alt="grape box">
+    <img src="https://brazenproducts.github.io/elipacko-assets/cauliflower-box.jpg" alt="cauliflower box">
+    <img src="https://brazenproducts.github.io/elipacko-assets/apple-box.jpg" alt="apple box-retouched">
   </div>
 </section>
-
-<!-- Photo Strip -->
-<div class="cb-strip">
-  <img src="https://brazenproducts.github.io/elipacko-assets/grape-box.jpg" alt="Grapes in plastic produce box">
-  <img src="https://brazenproducts.github.io/elipacko-assets/cauliflower-box.jpg" alt="Cauliflower in plastic produce box">
-  <img src="https://brazenproducts.github.io/elipacko-assets/red-apple-box.jpg" alt="Apples in plastic produce box">
+<div class="stats-bar">
+  <div class="stat"><div class="num">100+</div><div class="label">Use Cycles</div></div>
+  <div class="stat"><div class="num">0%</div><div class="label">USA Duty</div></div>
+  <div class="stat"><div class="num">100%</div><div class="label">Recyclable PP</div></div>
+  <div class="stat"><div class="num">USA</div><div class="label">Mfg Coming</div></div>
 </div>
-
-<!-- Buyers Guide -->
-<article class="cb-guide">
-  <h2>The Complete Buyer's Guide: Plastic vs. Cardboard Produce Boxes</h2>
-
-  <h3>Why Most Growers Still Use Cardboard — and Why That's Changing</h3>
-  <p>Cardboard became the default for fresh produce packaging for simple reasons: it was cheap per unit, immediately available in all sizes, and required no return logistics infrastructure. For small-volume operations shipping infrequently, this model still makes sense. But as volumes scale and supply chains mature, the economics of single-use cardboard become increasingly untenable.</p>
-  <p>The turning point typically comes when a packing house or distributor starts accounting for the true cost of cardboard: purchase price per unit, waste disposal fees, labor for box setup and breakdown, and the hidden cost of product damage caused by cardboard collapse in wet or refrigerated conditions. When these are added up, the cost per pallet position for single-use cardboard often exceeds the annualized cost of a reusable plastic produce box program by a factor of two to four times.</p>
-
-  <h3>The Moisture Problem: Why Waxed Cardboard Isn't Enough</h3>
-  <p>The produce industry developed waxed cardboard boxes specifically to address cardboard's weakness in moist environments. Waxed cardboard significantly extends structural life in cold-room conditions — but it doesn't eliminate the problem, just delay it. And wax coating introduces a new problem: the box cannot be recycled. Wax-fiber blends contaminate cardboard recycling streams, so spent waxed boxes must go to landfill or be incinerated.</p>
-  <p>More practically, waxed cardboard still softens over time in high-humidity environments. A waxed cardboard produce box might complete 1 to 3 trips in refrigerated transport before the base weakens enough to risk collapse under load. For any operation where boxes are handled more than once, this is a structural liability.</p>
-  <p>Plastic produce boxes — specifically those made from PP corrugated sheet — have zero moisture absorption by design. The twin-wall PP structure doesn't soften, sag, or delaminate regardless of humidity level. This is a fundamental material advantage, not an incremental improvement.</p>
-
-  <h3>The Total Cost of Ownership Calculation</h3>
-  <p>A rigorous total cost of ownership (TCO) comparison between cardboard and plastic produce boxes typically includes: unit acquisition cost, expected trip count, disposal cost per unit (for cardboard), wash cost per trip (for plastic), labor differential, and product damage rate differential. Across a range of commercial operations, the breakeven point — where plastic TCO drops below cardboard TCO — typically occurs between 8 and 15 reuse trips. Beyond that threshold, every additional trip is pure savings.</p>
-  <p>For growers running 3–5 week vegetable harvest cycles with regular packing house operations, 15 trips is often achievable within a single season. For fruit producers with longer seasons and higher annual volumes, the TCO advantages compound dramatically. <a href="https://elipacko.com">Plastic produce box specialists like Elipacko</a> can help you model the TCO for your specific operation before you commit to a specification.</p>
-
-  <h3>Sizing Your Plastic Produce Box Program</h3>
-  <p>Getting the sizing right matters more than most buyers initially appreciate. Common pitfalls include:</p>
-  <ul>
-    <li><strong>Underspecifying depth:</strong> A shallow crate saves money but may require double-stacking smaller quantities, increasing handling. Match depth to your standard pack weight and volume.</li>
-    <li><strong>Ignoring pallet fill efficiency:</strong> A crate that doesn't tile cleanly onto your pallet wastes capacity. Always confirm pallet compatibility before ordering.</li>
-    <li><strong>Underestimating pool float:</strong> In a closed-loop return system, boxes are always in transit, at the customer, being washed, or in buffer stock. Your active pool size needs to be 3–5× your daily volume to run smoothly.</li>
-    <li><strong>Not specifying load rating:</strong> Confirm both static and dynamic stacking load ratings. Transport vibration creates dynamic loads significantly higher than static weight alone.</li>
-  </ul>
-
-  <h3>Banana, Broccoli, and Cucumber: Crop-Specific Box Considerations</h3>
-  <p>Bananas are ethylene producers and require good ventilation and careful temperature management. Plastic banana boxes are typically deeper and may include hand-hole cutouts for easier handling of heavy loads. Broccoli is particularly heat-sensitive, releasing significant respiration heat post-harvest; maximum-ventilation crate designs with large perforations are important. Cucumbers need smooth interior surfaces to prevent mechanical bruising — look for boxes with rounded interior corners and no sharp features.</p>
-</article>
-
-<!-- CTA -->
-<section class="cb-cta">
-  <h2>Make the Switch to Plastic Produce Boxes</h2>
-  <p>Join thousands of growers and distributors who have replaced cardboard with reusable, food-safe, cost-effective plastic produce boxes.</p>
-  <a href="https://elipacko.com" class="cta-final">Shop Plastic Produce Boxes at Elipacko</a>
+<div class="recycle-banner">
+  <p>♻️ <strong>Made from recycled polypropylene. Fully recyclable at end of life.</strong> Unlike cardboard that degrades when wet, PP is clean, reusable, and accepted at recycling programs globally.</p>
+</div>
+<section class="gallery">
+  <h3>Product Photos</h3>
+  <p class="sub">From our #1 recommended manufacturer's facility</p>
+  <div class="gallery-grid">
+    <div class="gcard">
+      <img src="https://brazenproducts.github.io/elipacko-assets/banana-box.jpg" alt="Banana Shipping Box">
+      <div class="cap"><h4>Banana Shipping Box</h4><p>Ventilated PP corrugated — locks in freshness for tropical fruit over long hauls</p></div>
+    </div>
+    <div class="gcard">
+      <img src="https://brazenproducts.github.io/elipacko-assets/broccoli-box.jpg" alt="Broccoli Produce Box">
+      <div class="cap"><h4>Broccoli Produce Box</h4><p>Cold-chain rated; resists moisture and won't absorb field condensation</p></div>
+    </div>
+    <div class="gcard">
+      <img src="https://brazenproducts.github.io/elipacko-assets/cucumber-box.jpg" alt="Cucumber Crate">
+      <div class="cap"><h4>Cucumber Crate</h4><p>Stackable design with moulded ribs — carries full weight without flex</p></div>
+    </div>
+  </div>
 </section>
-
-<footer>
-  <p>© 2026 CardboardProduceBoxes.com &nbsp;|&nbsp; Your resource for produce packaging information &nbsp;|&nbsp; <a href="https://elipacko.com">Elipacko.com</a></p>
-</footer>
-
+<section class="honest">
+  <h3>The Honest Case for Switching from Cardboard</h3>
+  <p>Cardboard produce boxes are cheap per unit and widely available. There's a reason they've been the default for decades. But at scale, the economics shift significantly.</p>
+  <p>A produce distributor moving 10,000 boxes per month spends $10,000–$30,000 annually on cardboard — and disposes of every single box after one use. Wet cold chain environments accelerate cardboard failure, leading to product damage and contamination risk.</p>
+  <p>PP corrugated boxes from our top-rated manufacturer are reusable for 100+ cycles, fully waterproof, washable to food-grade standards, and 100% recyclable at end of life. The per-use cost after the first cycle is a fraction of cardboard. For operations at scale, the ROI case is clear.</p>
+  <p>Elipacko manufactures PP corrugated produce boxes direct — no distributors, factory pricing, 0% duty to USA.</p>
+</section>
+<section class="comp">
+  <h3>Cardboard vs. PP Plastic: Side by Side</h3>
+  <table class="comp-table">
+    <tr><th></th><th>PP Plastic (Elipacko)</th><th>Cardboard Produce Box</th></tr>
+    <tr><td>Reusable</td><td class="yes">✓ 100+ uses</td><td class="no">✗ Single use only</td></tr>
+    <tr><td>Waterproof</td><td class="yes">✓ 100%</td><td class="no">✗ Fails in wet conditions</td></tr>
+    <tr><td>Recyclable</td><td class="yes">✓ 100% recyclable PP</td><td class="no">✗ Food-contaminated cardboard often rejected</td></tr>
+    <tr><td>Washable</td><td class="yes">✓ Pressure wash safe</td><td class="no">✗ Cannot be washed</td></tr>
+    <tr><td>Food Grade</td><td class="yes">✓ FDA compliant available</td><td class="no">✗ Varies, absorbs odors</td></tr>
+    <tr><td>Cold Chain</td><td class="yes">✓ Full structural integrity</td><td class="no">✗ Weakens when cold &amp; wet</td></tr>
+    <tr><td>Per-Use Cost</td><td class="yes">✓ Drops to pennies at 100 uses</td><td class="no">✗ Full purchase price every shipment</td></tr>
+    <tr><td>Custom Branding</td><td class="yes">✓ Printed on PP</td><td class="no">✗ Available but fades/tears</td></tr>
+  </table>
+</section>
+<section class="benefits">
+  <h3>Why Elipacko</h3>
+  <div class="ben-grid">
+    <div class="ben"><h4>Direct Manufacturer</h4><p>No distributors. Elipacko manufactures and ships direct — factory pricing on every order.</p></div>
+    <div class="ben"><h4>0% USA Import Duty</h4><p>No tariff on Elipacko products shipped to the United States. Major cost advantage at volume.</p></div>
+    <div class="ben"><h4>Recycled &amp; Recyclable</h4><p>Made from recycled PP and 100% recyclable at end of life. Meets sustainability requirements for major retailers.</p></div>
+    <div class="ben"><h4>USA Mfg Coming Soon</h4><p>Domestic production coming — shorter lead times and local sourcing for US buyers.</p></div>
+    <div class="ben"><h4>Food Processing Ready</h4><p>FDA-compliant grades for direct contact with fresh produce, root vegetables, and specialty crops.</p></div>
+    <div class="ben"><h4>Custom Sizes &amp; Print</h4><p>Non-standard dimensions and full custom printing for branded wholesale operations.</p></div>
+  </div>
+</section>
+<section class="cta-section">
+  <h3>Get Wholesale Pricing Direct</h3>
+  <p>Our top-recommended manufacturer serves farms, packers, and distributors making the switch from cardboard. Recycled &amp; recyclable PP. 0% duty to USA.</p>
+  <a href="https://elipacko.com" class="cta-btn-orange">View Recommended Manufacturer</a>
+</section>
+<footer><p>© 2026 CardboardProduceBoxes.com — Independent Buyer's Guide | <a href="https://elipacko.com" target="_blank" rel="noopener">View Our Top-Rated Supplier &rarr;</a></p></footer>
 </body>
 </html>
